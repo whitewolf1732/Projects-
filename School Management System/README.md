@@ -116,22 +116,7 @@ When attempting to delete items, you may encounter a popup message stating, "Sor
 
 2. If you haven't made any changes, you should find the `deleteUser` function at line 71. It may be commented out. It might look like this:
 
-```javascript
-// export const deleteUser = (id, address) => async (dispatch) => {
-//     dispatch(getRequest());
 
-//     try {
-//         const result = await axios.delete(`${process.env.REACT_APP_BASE_URL}/${address}/${id}`);
-//         if (result.data.message) {
-//             dispatch(getFailed(result.data.message));
-//         } else {
-//             dispatch(getDeleteSuccess());
-//         }
-//     } catch (error) {
-//         dispatch(getError(error));
-//     }
-// }
-```
 
 3. Uncomment above `deleteUser` function and comment out this `deleteUser` function that is currently running from line 87 to line 90 :
 
